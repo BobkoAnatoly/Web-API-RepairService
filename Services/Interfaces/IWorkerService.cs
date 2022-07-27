@@ -7,7 +7,7 @@ namespace RepairService.Services.Interfaces
     {
         public void Create(Worker worker);
         public void Update(Worker worker);
-        public void Delete(int workerId);
+        public void Delete(Guid workerId);
         public ICollection<Worker> GetAll();
     }
 }
