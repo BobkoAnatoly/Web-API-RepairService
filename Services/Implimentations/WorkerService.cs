@@ -17,9 +17,9 @@ namespace RepairService.Services.Implimentations
             Workers.Create(worker);
         }
 
-        public void Delete(int workerId)
+        public void Delete(Guid id)
         {
-            throw new NotImplementedException();
+            Workers.Delete(id);
         }
 
         public ICollection<Worker> GetAll()
@@ -29,7 +29,7 @@ namespace RepairService.Services.Implimentations
 
         public void Update(Worker worker)
         {
-            throw new NotImplementedException();
+            Workers.Update(worker);
         }
     }
 }
